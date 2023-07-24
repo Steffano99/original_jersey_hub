@@ -8,20 +8,20 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "fiction",
+    categoryName: "Jerseys",
     description:
-      "literature in the form of prose, especially novels, that describes imaginary events and people",
+      "Official jerseys of top football clubs and national teams, as well as limited edition or retro jerseys",
   },
   {
     _id: uuid(),
-    categoryName: "non-fiction",
+    categoryName: "Equipment",
     description:
-      "Non-fiction is writing that gives information or describes real events, rather than telling a story.",
+      "High-quality footballs, training equipment, shin guards, and goalkeeper gloves.",
   },
   {
     _id: uuid(),
-    categoryName: "horror",
+    categoryName: "Collectibles",
     description:
-      "Meant to cause discomfort and fear for both the character and readers, horror writers often make use of supernatural and paranormal elements in morbid stories that are sometimes a little too realistic.",
+      "Limited edition signed memorabilia, football cards, and other collectibles from legendary players and iconic moments.",
   },
 ];
