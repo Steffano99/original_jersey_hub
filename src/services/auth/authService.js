@@ -7,6 +7,7 @@ export const signUpUser = async (authDispatch, dataDispatch, user, toast) => {
       status,
       data: { encodedToken, createdUser },
     } = await axios.post("api/auth/signup", user);
+  
     if (status === 201) {
       authDispatch({ type: ACTION_TYPES.SET_JWT_TOKEN, payload: encodedToken });
       authDispatch({ type: ACTION_TYPES.SET_USER, payload: createdUser });

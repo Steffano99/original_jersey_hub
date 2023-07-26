@@ -5,7 +5,7 @@
 
 /* hero bg */
 .hero-container .hero-image-container {
-  background-image: url("../../assets/HeroImage.png");
+  background-image: url("../../assets/HeroImage.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 86vh;
