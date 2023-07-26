@@ -107,7 +107,7 @@ export const products = [
     productDescription:
       "Iconic jersey of the Brazil national football team, reflecting the Samba flair and rich footballing history.",
     inStock: true,
-    averageRating: 4.8,
+    averageRating: 3,
   },
   {
     _id: uuid(),
@@ -120,7 +120,7 @@ export const products = [
     productDescription:
       "Classic jersey of the England national football team, symbolizing the Three Lions' pursuit of glory.",
     inStock: true,
-    averageRating: 4.1,
+    averageRating: 3.1,
   },
   {
     _id: uuid(),
@@ -145,7 +145,7 @@ export const products = [
     productName: "FC Barcelona Class Of 2011 Graphic Round Neck Tshirt",
     productDescription: "",
     inStock: false,
-    averageRating: 4.6,
+    averageRating: 3.6,
   },
   {
     _id: uuid(),
@@ -158,7 +158,7 @@ export const products = [
     productDescription:
       "Celebrate your love for Real Madrid with this stylish tee featuring an artistic 'Hala Madrid' design.",
     inStock: true,
-    averageRating: 4.6,
+    averageRating: 2.7,
   },
   {
     _id: uuid(),
