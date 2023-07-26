@@ -3,7 +3,8 @@ E-commerce website made with ReactJS.
 
 Website URL: https://ballerbotique.netlify.app/
 
-# Demo video
+# Demo 
+![](https://github.com/SahilBhosale0808/neogcamp-ballerboutique/blob/main/ecommerce.gif)
 
 
 
