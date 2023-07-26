@@ -8,20 +8,20 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Jerseys",
+    categoryName: "Club Jerseys",
     description:
-      "Official jerseys of top football clubs and national teams, as well as limited edition or retro jerseys",
+      "Jerseys of top football clubs worldwide, worn in domestic league matches and international club competitions.",
   },
   {
     _id: uuid(),
-    categoryName: "Equipment",
+    categoryName: "International Jerseys",
     description:
-      "High-quality footballs, training equipment, shin guards, and goalkeeper gloves.",
+      "Official jerseys representing national teams from various countries, worn in international competitions.",
   },
   {
     _id: uuid(),
-    categoryName: "Collectibles",
+    categoryName: "Graphic T-Shirts",
     description:
-      "Limited edition signed memorabilia, football cards, and other collectibles from legendary players and iconic moments.",
+      "Express yourself with trendy and artistic designs printed on comfortable and versatile tees for every occasion.",
   },
 ];

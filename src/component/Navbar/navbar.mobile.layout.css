@@ -1,0 +1,94 @@
+.nav-container {
+    display: none;
+}
+
+/* mobile-nav-container */
+.mobile-nav-container {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: 10;
+}
+
+/* image container */
+.image-container {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* hamburger menu */
+.hamburger {
+    align-self: center;
+    cursor: pointer;
+}
+
+/* hamburger menu when toggled to cross */
+.hamburger .cross {
+    color: var(--primary-color);
+}
+
+.hamburger .cross:hover {
+    color: red;
+}
+
+/* hamburger dashes */
+.hamburger .bar {
+    display: block;
+    background-color: var(--primary-color);
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+}
+
+/* for display none */
+.none {
+    display: none;
+}
+
+/* nav items when hamburger selected container */
+.nav-items-container {
+    z-index: 1;
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    gap: 2rem;
+    width: 50vw;
+    position: fixed;
+    right: 0;
+}
+
+/* nav items */
+.nav-items-container .nav-items {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: var(--p-mobile);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+/* nav items on hover */
+.nav-items-container .nav-items:hover {
+    background-color: var(--hover-color);
+    background-color: var(--hover-color);
+    border-radius: var(--border-xs);
+}
+
+/* nav items icons */
+.icon {
+    color: var(--primary-color);
+    font-size: var(--p-mobile);
+    cursor: pointer;
+}
+
+/* nav items link*/
+.link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
