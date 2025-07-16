@@ -1,9 +1,9 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { useEffect, useState } from "react";
 
 import { loginUser } from "../../services/auth/authService";
 import { useAuthContext } from "../../context/auth/AuthContext";
-import { useEffect, useState } from "react";
 import { useDataContext } from "../../context/data/DataContext";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,22 +21,20 @@ export const Login = () => {
   const { dataDispatch } = useDataContext();
 
   const [showPassword, setShowPassword] = useState(false);
+  const [loginForm, setloginForm] = useState({
+    email: "",
+    password: "",
+  });
 
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
     if (token) {
-      if (location?.state?.from?.pathname)
-        navigate(location.state.from.pathname);
-      else navigate("/products");
+      const redirectPath = location?.state?.from?.pathname || "/products";
+      navigate(redirectPath);
     }
-  }, [token]);
-
-  const [loginForm, setloginForm] = useState({
-    email: "",
-    password: "",
-  });
+  }, [token, location?.state?.from?.pathname, navigate]);
 
   const setloginFormValues = (inputFieldType, e) =>
     setloginForm((prev) => ({ ...prev, [inputFieldType]: e.target.value }));
@@ -44,20 +42,12 @@ export const Login = () => {
   const loginHandler = (type, e) => {
     e.preventDefault();
     if (type === "guest") {
-      setloginForm((prev) => ({
-        ...prev,
+      const guestCredentials = {
         email: "amosasenso@gmail.com",
         password: "0551296879",
-      }));
-      loginUser(
-        authDispatch,
-        dataDispatch,
-        {
-          email: "amosasenso@gmail.com",
-          password: "0551296879",
-        },
-        toast
-      );
+      };
+      setloginForm(guestCredentials);
+      loginUser(authDispatch, dataDispatch, guestCredentials, toast);
     } else {
       const { email, password } = loginForm;
       if (email && password) {
@@ -102,7 +92,11 @@ export const Login = () => {
             onClick={() => setShowPassword((prev) => !prev)}
           />
         </div>
-        <button className="primary-button" onClick={(e) => loginHandler("", e)}>
+
+        <button
+          className="primary-button"
+          onClick={(e) => loginHandler("", e)}
+        >
           Login
         </button>
         <button
@@ -112,9 +106,9 @@ export const Login = () => {
           Login as Guest
         </button>
       </form>
+
       <Link to="/signup" className="new-acc">
-        Create new account
-        <FontAwesomeIcon icon={faArrowRight} />
+        Create new account <FontAwesomeIcon icon={faArrowRight} />
       </Link>
     </div>
   );

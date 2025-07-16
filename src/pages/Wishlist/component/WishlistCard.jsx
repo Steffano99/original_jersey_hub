@@ -1,6 +1,6 @@
 import { useAuthContext } from "../../../context/auth/AuthContext";
 import { useDataContext } from "../../../context/data/DataContext";
-import { addToCart, removeFromCart, updateCart } from "../../../services/cart/cartService";
+import { addToCart, updateCart } from "../../../services/cart/cartService";
 import {
   addToWishlist,
   removeFromWishlist,
