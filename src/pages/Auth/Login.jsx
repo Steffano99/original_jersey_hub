@@ -46,15 +46,15 @@ export const Login = () => {
     if (type === "guest") {
       setloginForm((prev) => ({
         ...prev,
-        email: "sahilbhosale@gmail.com",
-        password: "1234",
+        email: "amosasenso@gmail.com",
+        password: "0551296879",
       }));
       loginUser(
         authDispatch,
         dataDispatch,
         {
-          email: "sahilbhosale@gmail.com",
-          password: "1234",
+          email: "amosasenso@gmail.com",
+          password: "0551296879",
         },
         toast
       );

@@ -6,7 +6,7 @@ import {
   filterAll
 } from "../../utils/filterProduct";
 
-import { ProductCard } from "./component/ProductCard.jsx/ProductCard";
+import { ProductCard } from "./component/ProductCard/ProductCard";
 
 import "./product.mobile.layout.css";
 import "./product.desktop.layout.css";

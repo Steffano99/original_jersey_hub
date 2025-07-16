@@ -4,7 +4,7 @@ import { WishlistCard } from "./component/WishlistCard";
 
 import "./wishlist.mobile.layout.css";
 import "./wishlist.desktop.layout.css";
-import { ProductCard } from "../../component/ProductCard.jsx/ProductCard";
+import { ProductCard } from "../../component/ProductCard/ProductCard";
 
 export const Wishlist = () => {
   const { wishlist } = useDataContext();

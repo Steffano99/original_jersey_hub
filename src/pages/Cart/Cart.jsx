@@ -4,7 +4,7 @@ import { PriceCard } from "../../component/PriceSummary/PriceCard";
 
 import "./cart.mobile.layout.css";
 import "./cart.desktop.layout.css";
-import { ProductCard } from "../../component/ProductCard.jsx/ProductCard";
+import { ProductCard } from "../../component/ProductCard/ProductCard";
 
 export const Cart = () => {
   const { cart } = useDataContext();
